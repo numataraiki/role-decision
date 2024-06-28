@@ -29,7 +29,7 @@ def is_straight(hand):
     
     return False
 
-#ロイヤルフラッシュを判定する
+#ロイヤルストレートフラッシュを判定する
 def is_royal_straight_flush(hand):
     return is_flush(hand) and set(rank for suit, rank in hand) == {"A", "K", "Q", "J", "10"}
 
